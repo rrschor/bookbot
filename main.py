@@ -32,6 +32,9 @@ if __name__ == '__main__':
     for file in txt_files:
         book_text, number_of_characters = open_file(file)
         report_text = build_report_text(book_text)
+        print(f'--- Begin report of {file.split('.')[0]}---')
         print(f'{file.split('.')[0]} contains {number_of_characters} words.')
+        print('\n')
         print(report_text)
         print('\n')
+        print(f'--- End report of {file.split('.')[0]}---')
